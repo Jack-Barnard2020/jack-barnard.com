@@ -2,66 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Barnard — Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jack Barnard</title>
 </head>
-
 <body>
-    <header class="hero">
-        <img src="jack.JPG" alt="Jack Barnard" class="profile-photo">
-        <h1>Jack Barnard</h1>
-        <p class="tagline">MEng Electrical & Electronic Engineering • Embedded Systems • Hardware Design</p>
-    </header>
-
-    <section class="intro">
-        <h2>About Me</h2>
-
-        <p>
-            I’m an engineer with a strong focus on hardware, embedded systems, and digital design.
-            My work spans FPGA development, low‑level programming, and building reliable technical
-            systems that bridge hardware and software. I enjoy solving complex engineering problems
-            and creating elegant, efficient solutions.
-        </p>
-
-        <p>
-            I’m currently studying for an MEng in Electrical and Electronic Engineering, building
-            experience across digital logic, embedded architectures, and systems engineering. I’ve
-            also been active within engineering societies, contributing to technical projects and
-            collaborative development environments.
-        </p>
-
-        <p>
-            My interests include FPGA design, computer architecture, embedded C/C++, digital systems,
-            and practical electronics. I’m driven by curiosity, hands‑on experimentation, and a desire
-            to build systems that are both technically robust and thoughtfully engineered.
-        </p>
-    </section>
-
-    <section class="projects">
-        <h2>Projects</h2>
-        <p>Explore my work at <strong>jack-barnard.com/projectname</strong></p>
-
-        <div class="project-list">
-            <a class="project-card" href="/fpga-vga">
-                <h3>FPGA VGA Driver</h3>
-                <p>Digital design project using SystemVerilog and DE1‑SoC hardware.</p>
-            </a>
-
-            <a class="project-card" href="/embedded-audio">
-                <h3>Embedded Audio Tools</h3>
-                <p>Audio signal generation and processing on microcontrollers.</p>
-            </a>
-
-            <a class="project-card" href="/robotics">
-                <h3>Robotics Outreach</h3>
-                <p>Engineering education and robotics demonstrations.</p>
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Jack Barnard</p>
-    </footer>
+    Hello World
 </body>
 </html>
