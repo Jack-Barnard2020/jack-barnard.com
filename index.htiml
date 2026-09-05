@@ -9,7 +9,7 @@
 
 <body>
     <header class="hero">
-        <img src="jack.jpg" alt="Jack Barnard" class="profile-photo">
+        <img src="jack.JPG" alt="Jack Barnard" class="profile-photo">
         <h1>Jack Barnard</h1>
         <p class="tagline">MEng Electrical & Electronic Engineering • Embedded Systems • Hardware Design</p>
     </header>
