@@ -1,40 +1,57 @@
-:root {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --link-color: #64b5f6;
-    --link-hover: #90caf9;
-    --border-radius: 8px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&display=swap');
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
     line-height: 1.6;
-    font-size: 1.05rem;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
-.container {
-    max-width: 680px;
+.avatar {
     width: 100%;
-    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
-.profile-photo {
-    margin-bottom: 24px;
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
-.profile-photo img {
+.hashtag {
+    color: #ff5555;
+    font-family: 'Fira Code', monospace;
+}
+
+.pronouns {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #888888;
+    font-family: 'Fira Code', monospace;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}.profile-photo img {
     width: 100%;
     max-width: 400px;
     height: auto;
