@@ -1,59 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&display=swap');
+
 body {
-    background-color: #292929;
-    padding: 5em;
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-    color: #ffffff;
-}
-
-a {
-    color: #d6d6d6;
-    font-weight: bold;
-}
-
-.pronouns {
-    color: #575757;
-}
-
-.hashtag {
-    color: #575757;
-    margin-left: -2ch;
-}
-
-.subhashtag {
-    color: #575757;
-    margin-left: -3ch;
-}
-
-.sub {
-    color: #575757;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px;
-}
-
-.gallery img {
-    width: 100%;
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 .avatar {
-    float: right;
-    width: 15vw;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0 0 3rem 3rem;
-    border-radius: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 830px) {
-    .avatar {
-        float: none;
-        display: block;
-        margin: 0 auto 3rem;
-        width: 50vw;
-    }
-}    font-size: 1rem;
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.hashtag {
+    color: #ff5555;
+    font-family: 'Fira Code', monospace;
+}
+
+.pronouns {
+    font-size: 1rem;
     font-weight: 400;
     color: #888888;
     font-family: 'Fira Code', monospace;
@@ -70,49 +51,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}.profile-photo img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: var(--border-radius);
-    display: block;
-}
-
-h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 12px;
-}
-
-.pronouns {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--text-muted);
-    margin-left: 8px;
-}
-
-.greeting {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 16px;
-}
-
-p {
-    margin-bottom: 18px;
-}
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--link-hover);
-    text-decoration: underline;
-}
-
-.links {
-    margin-top: 28px;
 }
