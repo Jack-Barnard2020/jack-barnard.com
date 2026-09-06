@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Barnard - PROJECT_NAME</title>
+    <title>Jack Barnard - Real-Time Digital Clock</title>
     <link rel="stylesheet" href="/assets/normalize.css">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -12,18 +12,14 @@
 
     <!-- Header Section -->
     <h1>
-        <span class="hashtag">#</span> Jack Barnard - PROJECT_NAME
+        <span class="hashtag">#</span> Jack Barnard - Real-Time Digital Clock
         
-        <!-- ======================================================== -->
-        <!-- OPTIONAL GITHUB LINK (DELETE THIS BLOCK IF NO REPO)     -->
-        <!-- ======================================================== -->
-        <a href="https://github.com/Jack-Barnard2020/YOUR-REPO-NAME" class="github-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Jack-Barnard2020/Real-Time-Digital-Clock" class="github-link" target="_blank" rel="noopener noreferrer">
             <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
             [GitHub]
         </a>
-        <!-- ======================================================== -->
     </h1>
 
     <!-- Main Content Layout -->
@@ -32,15 +28,15 @@
         <!-- Left Column: Paragraphs -->
         <main class="project-content">
             <p>
-                First paragraph describing the project overview, hardware, or implementation details.
+                This project implements a hardware-based real-time digital clock in SystemVerilog, designed specifically for deployment on the Terasic DE1-SoC FPGA board. The system utilizes the board's 50 MHz onboard oscillator, dividing the clock frequency down to drive precise 1-second counting logic for tracking hours, minutes, and seconds.
             </p>
             
             <p>
-                Second paragraph going deeper into technical challenges, languages used, or architectural choices.
+                The digital clock features full configuration capabilities using the board's physical inputs. Push buttons and toggle switches allow for setting the current time, adjusting hours and minutes independently, and toggling between 12-hour (with AM/PM indication) and 24-hour display modes. To ensure reliable user input, button signals are passed through synchronizers and edge-detection logic to eliminate mechanical contact bounce.
             </p>
 
             <p>
-                Additional paragraph for results, conclusions, or future plans.
+                Output multiplexing logic drives six onboard seven-segment LED displays to show hours, minutes, and seconds in real-time. Additionally, during time-setting modes, flashing segment logic provides visual feedback for the digit currently being adjusted.
             </p>
         </main>
 
@@ -48,15 +44,14 @@
         <aside class="project-media">
             <!-- Main Photo (RHS) -->
             <figure>
-                <img src="/assets/images/project-photo1.jpg" alt="Primary Project Photo">
-                <figcaption>Main project image description</figcaption>
+                <img src="assets/digital-clock-de1soc.jpg" alt="DE1-SoC board displaying the digital clock time on seven-segment displays">
+                <figcaption>Real-time clock operating on the DE1-SoC FPGA board</figcaption>
             </figure>
 
             <!-- Optional Second Photo (RHS Below) -->
-            <!-- Delete this figure block if not needed -->
             <figure>
-                <img src="/assets/images/project-photo2.jpg" alt="Secondary Project Photo">
-                <figcaption>Optional secondary photo caption</figcaption>
+                <img src="assets/digital-clock-setmode.jpg" alt="Close-up of seven-segment displays during time adjustment mode">
+                <figcaption>Time-configuration mode showing digit selection</figcaption>
             </figure>
         </aside>
 
