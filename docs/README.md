@@ -4,19 +4,26 @@ Source code for my personal website and digital portfolio, deployed live at [jac
 
 ## Project Structure
 ```
-[jack-barnard.com/](https://jack-barnard.com/)
+├── assets
+│   ├── cv.pdf
+│   ├── headshot.jpg
+│   ├── normalize.css
+│   └── style.css
 ├── CNAME
-├── index.html
-├── email.html
 ├── CV.html
-├── projects.html                                
-├── assets/
-│   ├── styles.css                              
-│   ├── normalize.css                         
-│   ├── cv.pdf                           
-│   └── headshot.jpg                        
-├── projects/
-│   ├── Real-Time-Digital-Clock/
-│   │   ├── index.html                        
-└── README.md        # Repository documentation
+├── docs
+│   ├── LICENSE
+│   └── README.md
+├── email.html
+├── index.html
+├── projects
+│   ├── Real-Time-Digital-Clock
+│   │   ├── assets
+│   │   │   ├── labeledclock.JPG
+│   │   │   └── statemachine.jpg
+│   │   └── index.html
+│   └── website
+├── projects.html
+└── template
+    └── project_template.html
 ```
