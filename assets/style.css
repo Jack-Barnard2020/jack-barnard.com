@@ -6,9 +6,19 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     line-height: 1.6;
-    max-width: 650px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 2rem 1rem;
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 4rem 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
 }
 
 .avatar {
