@@ -164,3 +164,16 @@ a:hover {
     align-items: center;
     gap: 0.4rem;
 }
+
+/* Color the default list item bullet using ::marker */
+li.status-green::marker {
+    color: #2ecc71;
+}
+
+li.status-yellow::marker {
+    color: #f1c40f;
+}
+
+li.status-red::marker {
+    color: #e74c3c;
+}
