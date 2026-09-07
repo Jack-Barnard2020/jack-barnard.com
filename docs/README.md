@@ -22,7 +22,10 @@ Source code for my personal website and digital portfolio, deployed live at [jac
 │   │   │   ├── labeledclock.JPG
 │   │   │   └── statemachine.jpg
 │   │   └── index.html
-│   └── website
+│   └── Website
+│       ├── assets
+│       │   └── website.jpg
+│       └── index.html
 ├── projects.html
 └── template
     └── project_template.html
