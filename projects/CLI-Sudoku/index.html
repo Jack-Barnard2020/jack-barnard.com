@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Barnard - CLI Sudoku</title>
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>
+        <span class="hashtag">#</span> Jack Barnard - CLI Sudoku
+        
+        <!-- ======================================================== -->
+        <!-- OPTIONAL GITHUB LINK & STATUS INDICATOR                 -->
+        <!-- ======================================================== -->
+        <a href="https://github.com/Jack-Barnard2020/ELEC2300-Rho1" class="github-link" target="_blank" rel="noopener noreferrer">
+            <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            [GitHub]
+        </a>
+        <!-- Status Dot: Change class to 'green', 'yellow', or 'red' -->
+        <span class="status-dot yellow" title="Status: In Progress"></span>
+        <!-- ======================================================== -->
+    </h1>
+
+    <!-- Project Dates Metadata -->
+    <div class="project-meta">
+        <div><strong>Date Created:</strong> 2026-09-21</div>
+        <div><strong>Last Modified:</strong> 2026-09-29</div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="project-grid">
+        
+        <!-- Left Column: Paragraphs -->
+        <main class="project-content">
+            <p>
+                This porject is part of a series of "mini-projects" that are a part of the ELEC2300 module at the Uiversity of Southampton. The task was to create a command line interface (CLI) Soduku game in C++. It was required that the game could load a plain text file with a fornat and layout of my choosing, print the baord to the terminal, allow the user to input numbers into the board, check if the board is valid, and auto-solve the puzzle.
+            </p>
+            <p>
+                I choose to solve this problem by first considering only the game logic and user-interface whilst igonoring the auto-solve funcctionality. I chose to represent th board as a 2D array of integers, with 0 represeting an empty cell, the board was loaded from a simple 9x9 csv file. The user was able to input postion and values into the board by providing a battleships-style coordinate and value, for example "A1 5" would place a 5 in the top left cell of the board. The program would automatically check if the board was completed and valid after each input, and would print the board to the terminal after each input.
+            </p>
+            <p>
+                Once the game logic and in-game UI was completed, I then implemented two auto-solve algorithms depth-first search and constraint propagation. Both algorithms were able to solve the board correctly but the constraint propagation algorithm was significantly faster than depth-first search on harder puzzles. Choice of algorithm is chosen at compile time by defining a preprocessor macro.
+            </p>
+            <p>
+                A main menu was then added to the game, allowing the user to choose between different diffculties of puzzles, or quitting the game.
+            </p>    
+        </main>
+
+        <!-- Right Column: Photos -->
+        <aside class="project-media">
+            <!-- Main Photo (RHS) -->
+            <figure>
+                <img src="/assets/CLI-Sudoku.jpg" alt="Primary Project Photo">
+                <figcaption>Main project image description</figcaption>
+            </figure>
+
+            <!-- Optional Second Photo (RHS Below) -->
+            <!-- Delete this figure block if not needed -->
+        </aside>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+        <p><a href="/projects.html">back to Projects</a> <br> <a href="/index.html">home</a></p>
+    </div>
+
+</body>
+</html>
