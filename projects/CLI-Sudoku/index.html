@@ -40,17 +40,17 @@
         <!-- Left Column: Paragraphs -->
         <main class="project-content">
             <p>
-                This project is part of a series of "mini-projects" within the ELEC2300 module at the University of Southampton. The objective was to create a command-line interface (CLI) Sudoku game in C++. The requirements specified that the game must load a plain text file using a custom format and layout, display the board in the terminal, process user numerical inputs, validate board states, and auto-solve puzzles.
-            </p>
-            <p>
-                I approached the implementation by first building the core game logic and user interface before addressing the solver functionality. The board is represented as a 2D integer array, using 0 to signify empty cells, and is populated from a standard 9x9 CSV file. Players input positions and values using Battleship-style coordinates (e.g., "A1 5" places a 5 in the top-left cell). After every move, the program re-renders the board in the terminal and checks if the puzzle is valid or complete.
-            </p>
-            <p>
-                After finalizing the game loop, I implemented two auto-solve algorithms: depth-first search (DFS) and constraint propagation. While both solved puzzles accurately, constraint propagation proved significantly faster on higher-difficulty boards. The active solving algorithm can be selected at compile time using a preprocessor macro.
-            </p>
-            <p>
-                Finally, I added a main menu that allows users to select puzzles across various difficulty levels or exit the application.
-            </p>  
+    This project is part of a series of "mini-projects" within the ELEC2300 module at the University of Southampton. The objective was to create a command-line interface (CLI) Sudoku game in C++. The requirements specified that the game must load a plain text file using a custom format and layout, display the board in the terminal, process user numerical inputs, validate board states, and auto-solve puzzles.
+</p>
+<p>
+    I approached the implementation by first building the core game logic and user interface before addressing the solver functionality. The board is represented as a 2D integer array, using 0 to signify empty cells, and is populated from a standard 9x9 CSV file. Players input positions and values using Battleships-style coordinates (e.g., "A1 5" places a 5 in the top-left cell). After every move, the program re-renders the board in the terminal and checks if the puzzle is valid or complete.
+</p>
+<p>
+    After finalizing the game loop, I implemented two auto-solve algorithms: depth-first search (DFS) and constraint propagation. While both solved puzzles accurately, constraint propagation proved significantly faster on higher-difficulty boards. The active solving algorithm is selected at compile time using a preprocessor macro.
+</p>
+<p>
+    Finally, I added a main menu that allows users to select puzzles across various difficulty levels or exit the application.
+</p>  
         </main>
 
         <!-- Right Column: Photos -->
