@@ -12,11 +12,15 @@ Source code for my personal website and digital portfolio, deployed live at [jac
 ├── CNAME
 ├── CV.html
 ├── docs
-│   ├── LICENSE
 │   └── README.md
 ├── email.html
 ├── index.html
+├── LICENSE
 ├── projects
+│   ├── CLI-Sudoku
+│   │   ├── assets
+│   │   │   └── CLI-SUDOKU.jpg
+│   │   └── index.html
 │   ├── Real-Time-Digital-Clock
 │   │   ├── assets
 │   │   │   ├── labeledclock.JPG
