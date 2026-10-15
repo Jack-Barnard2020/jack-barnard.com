@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Barnard - PROJECT_NAME</title>
+    <title>Jack Barnard - CLI Circuit Simulator</title>
     <link rel="stylesheet" href="/assets/normalize.css">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -12,12 +12,12 @@
 
     <!-- Header Section -->
     <h1>
-        <span class="hashtag">#</span> Jack Barnard - PROJECT_NAME
+        <span class="hashtag">#</span> Jack Barnard - CLI Circuit Simulator
         
         <!-- ======================================================== -->
         <!-- OPTIONAL GITHUB LINK & STATUS INDICATOR                 -->
         <!-- ======================================================== -->
-        <a href="https://github.com/Jack-Barnard2020/YOUR-REPO-NAME" class="github-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Jack-Barnard2020/ELEC2300-Rho2" class="github-link" target="_blank" rel="noopener noreferrer">
             <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
@@ -30,8 +30,8 @@
 
     <!-- Project Dates Metadata -->
     <div class="project-meta">
-        <div><strong>Date Created:</strong> YYYY-MM-DD</div>
-        <div><strong>Last Modified:</strong> YYYY-MM-DD</div>
+        <div><strong>Date Created:</strong> 2026-10-05</div>
+        <div><strong>Last Modified:</strong> 2026-10-15</div>
     </div>
 
     <!-- Main Content Layout -->
@@ -39,34 +39,33 @@
         
         <!-- Left Column: Paragraphs -->
         <main class="project-content">
-            <p>
-                First paragraph describing the project overview, hardware, or implementation details.
-            </p>
-            
-            <p>
-                Second paragraph going deeper into technical challenges, languages used, or architectural choices.
-            </p>
-
-            <p>
-                Additional paragraph for results, conclusions, or future plans.
-            </p>
+        <p>
+            This project is part of a series of "mini-projects" within the ELEC2300 module at the University of Southampton. The original objective was to create a command-line RC circuit simulator in C++ using object-oriented programming (OOP) principles. However, I got a little carried away and expanded it into a more general circuit simulator capable of performing DC nodal analysis and transient analysis of basic RC, RL and RLC circuits.
+        </p>
+        <p>
+            The simulator is built on a modular architecture, allowing for easy addition of new component types and analysis methods. The user interface is designed to be intuitive and efficient, providing a good balance between functionality and usability.
+        </p>
+        <p>
+            Circuits are described using netlist-style text files, which the simulator parses to construct the circuit from individual component objects. From there, the user can select an analysis through an interactive command-line interface. ANSI escape codes are used throughout the CLI to provide colour, formatting and clearer feedback without requiring a graphical interface.
+        </p>
+        <p>
+            The transient-analysis system automatically identifies supported RC, RL and RLC circuits and selects the appropriate numerical solver. First-order circuits are solved using a first-order ODE solver, while RLC circuits use a second-order solver to handle the coupled capacitor-voltage and inductor-current states. The calculated response is then displayed using a terminal-based plotting system.
+        </p>
+        <p>
+            I also implemented a simple bang-bang controller as an extension to the RC simulation. This creates a feedback loop in which the simulated supply switches between its minimum and maximum output depending on whether the capacitor voltage is above or below a chosen target.
+        </p>
+        <p>
+            I deliberately designed the project around separate, reusable C++ classes rather than building all of the functionality directly into the CLI. Components, circuits, netlist parsing, numerical solvers, plotting, analysis and control are kept separate, making the project easier to maintain and providing a foundation for supporting more complex circuits and analysis methods in the future.
+        </p>
         </main>
 
         <!-- Right Column: Photos -->
         <aside class="project-media">
             <!-- Main Photo (RHS) -->
             <figure>
-                <img src="/assets/images/project-photo1.jpg" alt="Primary Project Photo">
-                <figcaption>Main project image description</figcaption>
-            </figure>
-
-            <!-- Optional Second Photo (RHS Below) -->
-            <!-- Delete this figure block if not needed -->
-            <figure>
-                <img src="/assets/images/project-photo2.jpg" alt="Secondary Project Photo">
-                <figcaption>Optional secondary photo caption</figcaption>
-            </figure>
-        </aside>
+                <img src="/assets/images/image1.jpg" alt="Photo of the CLI Circuit Simulator running in a terminal window, showing a circuit netlist and the output of a transient analysis.">
+                <figcaption>Photo of the CLI Circuit Simulator in action</figcaption>
+            </figure
 
     </div>
 
