@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Barnard - VLSI Design Project</title>
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>
+        <span class="hashtag">#</span> Jack Barnard - VLSI Design Project
+        <!-- Status Dot: Change class to 'green', 'yellow', or 'red' -->
+        <span class="status-dot green" title="Status: Completed"></span>
+        <!-- ======================================================== -->
+    </h1>
+
+    <!-- Project Dates Metadata -->
+    <div class="project-meta">
+        <div><strong>Date Created:</strong> 2026-09-28</div>
+        <div><strong>Last Modified:</strong> 2026-10-12</div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="project-grid">
+        
+        <!-- Left Column: Paragraphs -->
+        <main class="project-content">
+            <p>
+                Completed as part of ELEC2301 at the University of Southampton, this group project involved 
+                designing and laying out four digital circuits for integration onto a single IC using 
+                Tanner S-Edit and L-Edit.
+            </p>
+            <p>
+                The IC consisted of a 4-bit ALU, a 10 MHz ring oscillator, a nine-segment display decoder 
+                and a pseudo-random number generator. My main responsibilities were developing the physical 
+                layout of the ALU and integrating the four completed circuit blocks into the final IC layout.
+            </p>
+            <p>
+                The ALU supports six operations on two 4-bit inputs: addition, subtraction, AND, OR, XOR 
+                and XNOR, with multiplexers used to select the required operation from the control inputs.
+            </p>
+            <p>
+                The integration stage was the most challenging part of the project. Bringing the four blocks 
+                together required careful placement and routing while maintaining connectivity and resolving 
+                DRC violations across the complete layout.
+            </p>
+        </main>
+
+        <!-- Right Column: Photos -->
+        <aside class="project-media">
+            <!-- Main Photo (RHS) -->
+            <figure>
+                <img src="assets/ALU.jpeg" alt="Layout of the ALU">
+                <figcaption>Layout of the ALU</figcaption>
+            </figure>
+
+            <!-- Optional Second Photo (RHS Below) -->
+            <!-- Delete this figure block if not needed -->
+            <figure>
+                <img src="assets/FullDesign.bmp" alt="Layout of the complete IC design">
+                <figcaption>Layout of the complete IC design</figcaption>
+            </figure>
+        </aside>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+        <p><a href="/projects.html">back to Projects</a> <br> <a href="/index.html">home</a></p>
+    </div>
+
+</body>
+</html>
