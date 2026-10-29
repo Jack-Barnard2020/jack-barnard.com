@@ -17,6 +17,15 @@ Source code for my personal website and digital portfolio, deployed live at [jac
 ├── index.html
 ├── LICENSE
 ├── projects
+│   ├── CLI-CircuitSimulator
+│   │   ├── assets
+│   │   │   └── image1.jpg
+│   │   └── index.html
+│   ├── CLI-NeuralNetworks
+│   │   ├── assets
+│   │   │   ├── 4BitDecoderResults.png
+│   │   │   └── ItemDetection.png
+│   │   └── index.html
 │   ├── CLI-Sudoku
 │   │   ├── assets
 │   │   │   └── CLI-SUDOKU.jpg
@@ -25,6 +34,11 @@ Source code for my personal website and digital portfolio, deployed live at [jac
 │   │   ├── assets
 │   │   │   ├── labeledclock.JPG
 │   │   │   └── statemachine.jpg
+│   │   └── index.html
+│   ├── VLSI-Design
+│   │   ├── assets
+│   │   │   ├── ALU.jpeg
+│   │   │   └── FullDesign.bmp
 │   │   └── index.html
 │   └── Website
 │       ├── assets
