@@ -177,3 +177,7 @@ li.status-yellow::marker {
 li.status-red::marker {
     color: #e74c3c;
 }
+
+.project-content > p:first-child {
+    margin-top: 0;
+}
