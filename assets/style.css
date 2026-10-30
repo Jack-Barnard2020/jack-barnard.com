@@ -181,3 +181,8 @@ li.status-red::marker {
 .project-content > p:first-child {
     margin-top: 0;
 }
+
+.justified p {
+    text-align: justify;
+    hyphens: auto;
+}
