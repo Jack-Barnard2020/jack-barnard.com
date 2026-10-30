@@ -182,7 +182,7 @@ li.status-red::marker {
     margin-top: 0;
 }
 
-.justified p {
+.project-content.justified p {
     text-align: justify;
     hyphens: auto;
 }
